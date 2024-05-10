@@ -1,0 +1,17 @@
+header {
+    position: relative;
+    height: 20vw;
+    min-height: 150px;
+    background-image: linear-gradient(#e2e2e2, #a0a0a0);
+}
+header h1 {
+    line-height: 20vw;
+    font-weight: 900;
+    font-size: 4rem;
+}
+.main-header{
+    display:flex;
+}
+.main-header img{
+    width: 10%;
+}

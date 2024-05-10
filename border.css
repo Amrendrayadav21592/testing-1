@@ -1,0 +1,19 @@
+#first{
+    height: 60px;
+    width: 76px;
+    background-color: aquamarine;
+}
+#second{
+    height: 45px;
+    width: 77px;
+
+    background-color: blueviolet;
+}
+#third{
+    border: 4px solid red;
+}
+#first_para{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(198, 23, 23);
+}

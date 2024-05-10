@@ -1,0 +1,51 @@
+.cube{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 100px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: rotateX(25deg) rotateY(-25deg);
+}
+.face{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transition: all 1s;
+    
+}
+.one{
+    background-color: skyblue;
+}
+.two {
+    background-color: rgb(235, 135, 160);
+    transform: rotateY(90deg) translateZ(-100px) translateX(+100px);
+}
+
+.three{
+    background-color: rgb(135, 235, 163);
+    transform: rotateY(90deg) translateZ(100px) translateX(+100px);
+}
+.four{
+    background-color: rgb(159, 60, 195);
+    transform:  translateZ(-200px) ;
+}
+.five{
+    background-color: rgb(222, 202, 22);
+    transform: rotateX(-90deg) translateZ(+100px) translateY(+100px);
+}
+.six{
+    background-color: rgb(23, 107, 241);
+    transform: rotateX(90deg) translateZ(+100px) translateY(-100px);
+}
+@keyframes spin {
+    from { transform: rotateX(45deg) rotateY(45deg); }
+  to { transform: rotateX(45deg) rotateY(45deg) rotateZ(360deg); }
+  }
+  
+  .cube {
+    animation: spin 5s linear infinite; /* Spins the cube for 5 seconds */
+  }
+  
